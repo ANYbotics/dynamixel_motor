@@ -528,6 +528,7 @@ class DynamixelIO(object):
         Set the servo with servo_id to the specified goal position.
         Position value must be positive.
         """
+        position &= 0xffff
         loVal = int(position % 256)
         hiVal = int(position >> 8)
 
@@ -612,6 +613,7 @@ class DynamixelIO(object):
             hiSpeedVal = int((1023 - speed) >> 8)
 
         # split position into 2 bytes
+        position &= 0xffff
         loPositionVal = int(position % 256)
         hiPositionVal = int(position >> 8)
 
@@ -729,6 +731,7 @@ class DynamixelIO(object):
             sid = vals[0]
             position = vals[1]
             # split position into 2 bytes
+            position &= 0xffff
             loVal = int(position % 256)
             hiVal = int(position >> 8)
             writeableVals.append( (sid, loVal, hiVal) )
@@ -803,6 +806,7 @@ class DynamixelIO(object):
                 hiSpeedVal = int((1023 - speed) >> 8)
 
             # split position into 2 bytes
+            position &= 0xffff
             loPositionVal = int(position % 256)
             hiPositionVal = int(position >> 8)
             writeableVals.append( (sid, loPositionVal, hiPositionVal, loSpeedVal, hiSpeedVal) )
