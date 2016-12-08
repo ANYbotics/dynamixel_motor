@@ -882,6 +882,8 @@ class DynamixelIO(object):
         if response:
             self.exception_on_error(response[4], servo_id, 'fetching present position')
         position = response[5] + (response[6] << 8)
+        if position & 0x8000:
+            position += -0x10000
         return position
 
     def get_speed(self, servo_id):
@@ -938,7 +940,11 @@ class DynamixelIO(object):
         if len(response) == 24:
             # extract data values from the raw data
             goal = response[5] + (response[6] << 8)
+            if goal & 0x8000:
+                goal += -0x10000
             position = response[11] + (response[12] << 8)
+            if position & 0x8000:
+                position += -0x10000
             error = position - goal
             speed = response[13] + ( response[14] << 8)
             if speed > 1023: speed = 1023 - speed
