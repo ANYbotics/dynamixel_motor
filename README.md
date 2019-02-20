@@ -1,7 +1,6 @@
 # dynamixel_motor
 
-[![Build Status](https://ci.leggedrobotics.com/buildStatus/icon?job=github_leggedrobotics/dynamixel_motor/release)]
-(https://ci.leggedrobotics.com/job/github_leggedrobotics/job/dynamixel_motor/job/release/)
+[![Build Status](https://ci.leggedrobotics.com/buildStatus/icon?job=github_leggedrobotics/dynamixel_motor/release)](https://ci.leggedrobotics.com/job/github_leggedrobotics/job/dynamixel_motor/job/release/)
 
 [![Build Status](https://ci.leggedrobotics.com/buildStatus/icon?job=github_leggedrobotics/dynamixel_motor/pre-release)](https://ci.leggedrobotics.com/job/github_leggedrobotics/job/dynamixel_motor/job/pre-release/)
 
