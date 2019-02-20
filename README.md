@@ -1,10 +1,10 @@
 # dynamixel_motor
 
-Release: [![Build Status](https://ci.leggedrobotics.com/buildStatus/icon?job=github_leggedrobotics/dynamixel_motor/release)](https://ci.leggedrobotics.com/job/github_leggedrobotics/job/dynamixel_motor/job/release/)
-
-Pre-Release: [![Build Status](https://ci.leggedrobotics.com/buildStatus/icon?job=github_leggedrobotics/dynamixel_motor/pre-release)](https://ci.leggedrobotics.com/job/github_leggedrobotics/job/dynamixel_motor/job/pre-release/)
-
-Master: [![Build Status](https://ci.leggedrobotics.com/buildStatus/icon?job=github_leggedrobotics/dynamixel_motor/master)](https://ci.leggedrobotics.com/job/github_leggedrobotics/job/dynamixel_motor/job/master/)
+| Branch | Build Status |
+|---|---|
+| Release | [![Build Status](https://ci.leggedrobotics.com/buildStatus/icon?job=github_leggedrobotics/dynamixel_motor/release)](https://ci.leggedrobotics.com/job/github_leggedrobotics/job/dynamixel_motor/job/release/) |
+| Pre-Release | [![Build Status](https://ci.leggedrobotics.com/buildStatus/icon?job=github_leggedrobotics/dynamixel_motor/pre-release)](https://ci.leggedrobotics.com/job/github_leggedrobotics/job/dynamixel_motor/job/pre-release/) |
+| Master | [![Build Status](https://ci.leggedrobotics.com/buildStatus/icon?job=github_leggedrobotics/dynamixel_motor/master)](https://ci.leggedrobotics.com/job/github_leggedrobotics/job/dynamixel_motor/job/master/) |
 
 ROS stack for interfacing with Robotis Dynamixel line of servo motors.
 
