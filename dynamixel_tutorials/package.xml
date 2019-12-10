@@ -1,10 +1,9 @@
 <package>
   <name>dynamixel_tutorials</name>
   <version>0.5.0</version>
-  <description>
-    Example configuration and launch file for dynamixel_motor stack.
-  </description>
-  <maintainer email="arebgun@gmail.com">Antons Rebguns</maintainer>
+  <description>Example configuration and launch file for dynamixel_motor stack.</description>
+  <maintainer email="sbachmann@anybotics.com">Samuel Bachmann</maintainer>
+  <maintainer email="rdiethelm@anybotics.com">Remo Diethelm</maintainer>
 
   <license>BSD</license>
 

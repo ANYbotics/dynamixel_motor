@@ -1,10 +1,9 @@
 <package>
   <name>dynamixel_msgs</name>
   <version>0.5.0</version>
-  <description>
-    Common messages used throughout dynamixel_motor stack.
-  </description>
-  <maintainer email="arebgun@gmail.com">Antons Rebguns</maintainer>
+  <description>Common messages used throughout dynamixel_motor stack.</description>
+  <maintainer email="sbachmann@anybotics.com">Samuel Bachmann</maintainer>
+  <maintainer email="rdiethelm@anybotics.com">Remo Diethelm</maintainer>
 
   <license>BSD</license>
 
