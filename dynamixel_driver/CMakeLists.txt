@@ -10,6 +10,14 @@ catkin_package(
     CATKIN_DEPENDS rospy diagnostic_msgs
 )
 
+# Testing
+if(CATKIN_ENABLE_TESTING)
+  find_package(cmake_python_coverage REQUIRED)
+  if(cmake_python_coverage_FOUND)
+    add_pytest_with_coverage(test/test_empty.py dynamixel_driver)
+  endif()
+endif()
+
 install(PROGRAMS
   scripts/change_id.py
   scripts/info_dump.py

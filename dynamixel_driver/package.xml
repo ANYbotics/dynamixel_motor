@@ -19,6 +19,8 @@
   <run_depend>diagnostic_msgs</run_depend>
   <run_depend>python-serial</run_depend>
 
+<!--   <test_depend>cmake_python_coverage</test_depend> -->
+
   <export>
 
   </export>

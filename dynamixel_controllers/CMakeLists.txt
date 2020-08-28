@@ -32,6 +32,14 @@ catkin_package(
   control_msgs
 )
 
+# Testing
+if(CATKIN_ENABLE_TESTING)
+  find_package(cmake_python_coverage REQUIRED)
+  if(cmake_python_coverage_FOUND)
+    add_pytest_with_coverage(test/test_empty.py dynamixel_controllers)
+  endif()
+endif()
+
 install(DIRECTORY launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
