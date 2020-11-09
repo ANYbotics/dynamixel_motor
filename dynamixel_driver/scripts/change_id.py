@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # Software License Agreement (BSD License)
@@ -70,17 +70,17 @@ if __name__ == '__main__':
     
     try:
         dxl_io = dynamixel_io.DynamixelIO(port, baudrate)
-    except dynamixel_io.SerialOpenError, soe:
-        print 'ERROR:', soe
+    except dynamixel_io.SerialOpenError as soe:
+        print('ERROR:', soe)
     else:
-        print 'Changing motor id from %d to %d...' %(old_id, new_id),
+        print(f'Changing motor id from {old_id} to {new_id}...')
         if dxl_io.ping(old_id):
             dxl_io.set_id(old_id, new_id)
-            print ' done'
-            print 'Verifying new id...' ,
+            print(' done')
+            print('Verifying new id...')
             if dxl_io.ping(new_id):
-                print ' done'
+                print(' done')
             else:
-                print 'ERROR: The motor did not respond to a ping to its new id.'
+                print('ERROR: The motor did not respond to a ping to its new id.')
         else:
-            print 'ERROR: The specified motor did not respond to id %d. Make sure to specify the correct baudrate.' % old_id
+            print(f'ERROR: The specified motor did not respond to id {old_id}. Make sure to specify the correct baudrate.')
